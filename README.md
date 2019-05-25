@@ -1,8 +1,10 @@
 # DMOJ_Projects
 Holds all the code I used to solve problems in DMOJ.
 
-It is seperated into:
-- Math
-- Data Structure
-- Cool Algorithms
-- Implementation
+I have learnt a lot since staring DMOJ mainly - 
+- BSTs
+- Segment trees and prefix sums
+- Suffix Trees
+- Graph Theory
+
+I also improved my coding skills in both Python 3 and Java.
