@@ -1,5 +1,5 @@
 # DMOJ_Projects
-Holds all the code I used to solve problems in DMOJ.
+Holds code I used to solve problems in DMOJ.
 
 I have learnt a lot since staring DMOJ mainly - 
 - BSTs
