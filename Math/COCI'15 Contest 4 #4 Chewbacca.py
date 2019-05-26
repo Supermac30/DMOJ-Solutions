@@ -1,3 +1,8 @@
+"""
+    I'm seriously proud of this code.
+    Anything is possible if you stay up till 3 am
+"""
+
 import sys,math;input=sys.stdin.readline
 def fix(level): return (1-(K**level))/(1-K)
 def distance(a,b):
