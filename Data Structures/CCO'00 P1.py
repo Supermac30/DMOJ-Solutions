@@ -37,4 +37,3 @@ names = sorted(nodes)
 for name in names:
     values = sorted(nodes.get(name).values)
     print(name,"=","{"+str(values)[1:-1].replace(' ','').replace('\'','')+"}")
-s
