@@ -8,3 +8,6 @@ I have learnt a lot since staring DMOJ mainly -
 - Graph Theory
 
 I also improved my coding skills in both Python 3 and Java.
+
+This is me!
+https://dmoj.ca/user/Supermac30
