@@ -1,5 +1,5 @@
 # DMOJ_Projects
-Holds code I used to solve problems in DMOJ.
+Holds code I used to solve problems in DMOJ that are 10 points or greater.
 
 I have learnt a lot since staring DMOJ mainly - 
 - BSTs
