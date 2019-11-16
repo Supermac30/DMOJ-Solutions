@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/tle15p3
+"""
 import sys; input=sys.stdin.readline
 def buildLine(counter, size, start):
     """

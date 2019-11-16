@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/ccc03s3
+"""
 import sys; input = sys.stdin.readline
 wood = int(input())
 floor = []

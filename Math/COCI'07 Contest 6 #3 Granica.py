@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/coci07c6p3
+"""
 import sys; input = sys.stdin.readline
 nums = []
 smallest = 1000000000

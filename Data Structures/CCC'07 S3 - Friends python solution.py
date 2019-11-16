@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/ccc07s3
+"""
 import sys
 loops = []
 def fixdata(a,b):

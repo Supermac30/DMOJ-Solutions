@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/dmopc13c1p4
+"""
 import sys;input=sys.stdin.readline
     
 for times in range(int(input())):

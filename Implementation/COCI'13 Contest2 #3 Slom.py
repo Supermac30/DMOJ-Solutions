@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/coci13c2p3
+"""
 import sys; input = sys.stdin.readline
 
 def move(word):

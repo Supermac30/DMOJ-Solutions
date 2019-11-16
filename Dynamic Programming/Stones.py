@@ -1,5 +1,6 @@
 """
-  This is a dynamic programming solution to the game theory problem https://dmoj.ca/problem/dpk
+  This is a dynamic programming solution to a game theory problem
+  https://dmoj.ca/problem/dpk
 """
 import sys; input = sys.stdin.readline
 

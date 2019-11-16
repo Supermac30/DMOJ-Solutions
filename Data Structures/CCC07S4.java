@@ -1,3 +1,6 @@
+/*
+	https://dmoj.ca/problem/ccc07s4
+*/
 import java.util.*;
 
 class node {

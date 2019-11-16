@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/cco00p1
+"""
 import sys; input = sys.stdin.readline
 class node:
     def __init__(self,name):

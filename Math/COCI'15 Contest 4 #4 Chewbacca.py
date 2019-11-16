@@ -1,6 +1,7 @@
 """
     I'm seriously proud of this code.
     Anything is possible if you stay up till 3 am.
+	https://dmoj.ca/problem/coci15c4p4
 """
 
 import sys,math;input=sys.stdin.readline

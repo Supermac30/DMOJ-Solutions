@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/ccc10j4
+"""
 import sys;input=sys.stdin.readline
 inp = list(map(int,input().split()))
 def period(size):

@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/factorial
+"""
 import sys, math
 input = sys.stdin.readline
 try:

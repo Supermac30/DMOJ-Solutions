@@ -1,3 +1,6 @@
+"""
+	https://dmoj.ca/problem/fhc15c2p1
+"""
 import sys
 input = sys.stdin.readline
 for i in range(int(input())):
