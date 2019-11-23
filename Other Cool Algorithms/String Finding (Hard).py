@@ -34,6 +34,5 @@ def find(search, pattern):
                 check += 1
         if loc == P:
             return check-P
-        if check == S:
-            return -1
+    return -1
 print(find(input()[:-1], input()[:-1]))
