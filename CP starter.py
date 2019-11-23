@@ -113,11 +113,9 @@ def fib(n):
 
 #Solves 0-1 Knapsack
 def knapsack(values, weights, maxWeight):
-    A = [[]]
-    for i in range(len(weights)+1):
-        A[0].append(0)
+    A = [[0]*(maxWeight+1)]
     for i in range(len(values)):
-        A.append([-1]*(len(weights)+1))
+        A.append([-1]*(maxWeight+1))
     for i in range(1, len(values)+1):
         for j in range(maxWeight+1):
             if j >= weights[i-1]:
@@ -130,7 +128,7 @@ def knapsack(values, weights, maxWeight):
 def binSearch(sortedarr, value, left = 0, right = -1):
     if right == -1:
         right = len(sortedarr)
-    if right > left:
+    if right < left:
         return -1
     mid = (left+right)//2
     check = sortedarr[mid]
@@ -203,4 +201,3 @@ class BST():
         if root.name < val:
             return self.search(val, root.right)
         return self.search(val, root.left)
-    
