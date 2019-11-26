@@ -11,13 +11,13 @@ def isPrime(n):
     return True
 
 #Creates the Sieve of Eratosthenes, finding primes in a range of values
-def sieve(size):
-    sieve = [True] * (size-1)
-    for i in range(size-1):
+def createSieve(size):
+    sieve = [False, False] + [True] * (size-1)
+    for i in range(2, size-1):
         if sieve[i] == True:
-            for j in range(2*i+2, len(sieve), i+2):
+            for j in range(2*i, len(sieve), i):
                 sieve[j] = False
-    return [False] + sieve
+    return sieve
 
 #returns the prime factors of n
 def primeFactors(n):
