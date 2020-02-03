@@ -1,9 +1,9 @@
 #fastest way to get input, note input() will now read new line characters '\n'
 import sys; input=sys.stdin.readline
 
-#Fastest way to check if a value is prime
+#Fastest way to check if a value is prime without using a sieve
 def isPrime(n):
-    if n == 1 or (n%2 == 0 and n != 2):
+    if n <= 1 or (n%2==0 and n!= 2):
         return False
     for i in range(3, int(n**0.5)+1, 2):
         if n%i == 0:
@@ -68,7 +68,7 @@ def bfs(start, end, graph):
 #return the distance from the start node to every other node in a graph
 def bfsAll(start, graph):
     from collections import deque
-    queue = deque(children[start])
+    queue = deque(children(start))
     amount = len(queue)
     counter = 1
     seen = set()
@@ -82,8 +82,8 @@ def bfsAll(start, graph):
         if check in seen:
             continue
         seen.add(check)
-        graph[check-1] = counter
-        queue.extend(children[check])
+        distances[check-1] = counter
+        queue.extend(children(check))
     return distances
 
 #dfs through a graph, works if there exists a function 'children' returning adjacent nodes
@@ -201,3 +201,54 @@ class BST():
         if root.name < val:
             return self.search(val, root.right)
         return self.search(val, root.left)
+
+#builds a lowest proper prefix array
+def buildLPS(word):
+    start = 0
+    lps = [0]*len(word)
+    check = 1
+    while check != len(word):
+        if word[check] == word[start]:
+            lps[check] = start + 1
+            start += 1
+        else:
+            if start != 0:
+                start = lps[start-1]
+                check -= 1
+        check += 1
+    return lps
+
+#Fastest way to check if a substring exists, uses KMP O(n+m), returns location
+def find(search, pattern):
+    lps = buildLPS(pattern)
+    P, S = len(pattern), len(search)
+    check = 0
+    loc = 0
+    while check != S:
+        if pattern[loc] == search[check]:
+            check += 1
+            loc += 1
+        else:
+            if loc != 0:
+                loc = lps[loc-1]
+            else:
+                check += 1
+        if loc == P:
+            return check-P
+    return -1
+
+#Euclidean Algorithm for the greatest common divisor 
+def gcd(a, b):
+	while b != 0:
+		a, b = b, a%b
+	return a
+
+#Convert a number in base 10 to base n, returns a list
+def base(num, n):
+	if num == 0:
+		return [0]
+	new = []
+	while num != 0:
+		new.append(num%n)
+		num //= n
+	return new[::-1]
